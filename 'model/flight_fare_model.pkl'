@@ -1,0 +1,11 @@
+import os
+import joblib
+
+os.makedirs("model", exist_ok=True)
+
+joblib.dump(
+    pipeline,
+    "model/flight_fare_model.pkl"
+)
+
+print("Model saved successfully")
